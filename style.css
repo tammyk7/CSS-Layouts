@@ -5,8 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header and nav styles */
-
 .header {
     background-color: white;
 }
@@ -47,6 +45,7 @@ nav a {
     font-weight: 200;
     color: rgb(35, 35, 153);
 }
+
 .design-geek {
 height: 100%;
 width: 100%;
@@ -54,11 +53,13 @@ background-color: white;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* width 200px */
 gap: 15px 15px;
+overflow: auto;
 }
 
-.grid-content {
+.dg-grid-content {
     aspect-ratio: 1/.85;
-    background-color:  rgb(84, 84, 84);
+    background-color:  grey;
+    border-radius: 5px;
 }
 
 .el-classico {
@@ -68,6 +69,7 @@ gap: 15px 15px;
     background-color: white;
     column-gap: 10px;
 }
+
 .ec-aside {
     height: 100vh;
     width: 411px;
@@ -77,12 +79,15 @@ gap: 15px 15px;
 .ec-grid-container {
     height: 100%;
     width: 100%;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     gap: 10px 10px;
+    overflow: auto;
 }
 
 .ec-content {
     height: 190px;
     background-color: grey;
+    border-radius: 5px;
 }
