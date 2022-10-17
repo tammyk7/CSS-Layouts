@@ -51,7 +51,7 @@ nav a {
 .design-geek-container {
     height: 100%;
     width: 100%;
-    min-width: 600px;
+    min-width: 685px;
     background-color: white;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(327px, 1fr)); /* width 200px */
@@ -103,6 +103,7 @@ nav a {
     display: flex;
     height: 100%;
     width: 100%;
+    min-width: 1115px;
     background-color: white;
     column-gap: 10px;
 }
@@ -117,7 +118,6 @@ nav a {
 .lh-grid-container {
     height: 100%;
     width: 100%;
-    min-width: 600px;
     max-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));
@@ -141,7 +141,7 @@ nav a {
 .cross-eyed {
     height: 100vh;
     width: 100%;
-    min-width: 600px;
+    min-width: 669px;
     background-color: white;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(327px, 1fr)); /* width 200px */
@@ -223,20 +223,28 @@ nav a {
     column-gap: 10px;
 }
 
+.fh-primary-aside {
+    height: 100vh;
+    width: 411px;
+    min-width: 411px;
+    background-color: rgb(84, 84, 84);
+    border-radius: 5px;
+}
+
 .fh-aside {
     height: 100vh;
+    width: 411px;
     min-width: 411px;
     background-color: rgb(84, 84, 84);
     border-radius: 5px;
 }
 
 .fh-grid-container {
-    height: 100%;
-    width: 100%;
-    min-width: 600px;
-    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    min-width: 640px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px 10px;
     overflow: auto;
 }
@@ -245,6 +253,12 @@ nav a {
     aspect-ratio: 1/.85;
     background-color:rgb(157, 152, 152);
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1536px) {   
+    .fh-aside{
+        display: none;
+    }   
 }
 
 .cockpit {
@@ -328,7 +342,8 @@ nav a {
 
 .tr-title {
     padding-left: 5px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+    padding-top: 20px;
     text-align: left;
     align-items: center;
     color: rgb(239, 239, 239);
@@ -337,6 +352,7 @@ nav a {
 p {
     padding-top: 30px;
     padding-left: 5px;
+    padding-right: 3px;
     text-align: start;
     align-content: stretch;
     font-size: 25px;
