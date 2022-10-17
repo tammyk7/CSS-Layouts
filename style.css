@@ -215,14 +215,6 @@ nav a {
     }
 }
 
-/* .nf-entry-content {
-    height: 70px;
-    width: 100%;
-    background-color: rgb(157, 152, 152);
-    border-radius: 5px;
-    overflow: auto;
-} */
-
 .front-hand {
     display: flex;
     height: 100%;
@@ -304,10 +296,11 @@ nav a {
 .the-reader {
     height: 100vh;
     width: 100vw;
-    min-width: 400px;
+    min-width: 1051px;
     display: flex;
     background-color: white;
     column-gap: 10px;
+    padding-right: 15px;
 }
 
 .tr-primary-aside {
@@ -326,17 +319,26 @@ nav a {
     border-radius: 5px;
 }
 
-.tr-grid-container {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: minmax(1730px, 1fr);
-    padding-right: 15px;
-    overflow: auto;
-}
-
 .tr-content {
     width: 100%;
     background-color:rgb(157, 152, 152);
     border-radius: 5px;
+    overflow: auto;
+}
+
+.tr-title {
+    padding-left: 5px;
+    padding-bottom: 80px;
+    text-align: left;
+    align-items: center;
+    color: rgb(239, 239, 239);
+}
+
+p {
+    padding-top: 30px;
+    padding-left: 5px;
+    text-align: start;
+    align-content: stretch;
+    font-size: 25px;
+    color: rgb(239, 239, 239);
 }
